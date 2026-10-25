@@ -1,0 +1,10 @@
+{
+  "app": "Sunset Simulator",
+  "runtime": "Windows .NET Framework 4.x",
+  "windowsVersion": "1.0-dev",
+  "buildId": "F5DCC59B00E9D7EBF13883FA95518258B6EDC3AB2AF9FF4DD436CCB4C4972305",
+  "status": "B",
+  "sourceVersion": "1.0-dev",
+  "approved": false,
+  "version": "1.0-dev"
+}
