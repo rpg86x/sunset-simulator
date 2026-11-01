@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 $out = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '../windows'))
 $shell = New-Object -ComObject WScript.Shell
-$link = $shell.CreateShortcut((Join-Path ([Environment]::GetFolderPath('Desktop')) 'Sunset Simulator 1.3-dev B.lnk'))
+$link = $shell.CreateShortcut((Join-Path ([Environment]::GetFolderPath('Desktop')) 'Sunset Simulator 1.5-dev B.lnk'))
 $link.TargetPath = Join-Path $out 'Sunset Simulator.exe'
 $link.WorkingDirectory = $out
 $link.IconLocation = Join-Path $out 'Sunset.ico'

@@ -1,4 +1,4 @@
-# Sunset Simulator 1.3-dev — B
+# Sunset Simulator 1.5-dev — B
 Manual Windows test candidate. Play starts at yellow and fades continuously through orange and red to dark red over the chosen duration (15, 30, 60 or 90 minutes; default 30). Pause freezes elapsed time and keeps the glow; Play resumes. Stop removes the overlay and resets to yellow. A new Play restarts at yellow.
 At the end: keep dark red until Stop (default), fade out slowly and stop, or stop and put the PC to sleep. Sleep is never triggered by the test buttons.
 Hotkeys: Ctrl+Alt+P toggles Play/Pause, Ctrl+Alt+S stops. If another app already uses them, the app says so in its hint text.
@@ -6,3 +6,5 @@ Optional "Start with Windows": the app then starts hidden in the system tray (no
 Download: get the ready-to-run zip from the GitHub Releases page (unzip, then start "Sunset Simulator.exe"; keep Sunset.ico next to it). Build yourself: B/source/build.ps1. Start: B/windows/Sunset Simulator.exe. Candidate B is not an approved stable release.
 Test — 3 minutes and Test 2 — 30 seconds restart the full color sequence at the selected speed. Pause/resume works in both tests. Stop restores the chosen normal duration.
 Schedule: tick "Start automatically at" and pick a time (e.g. 18:00); the session then starts once per day at that time with the chosen duration. If the app is opened late, it catches up so the color matches the clock. The app must be running (the tray is fine). Pick a city to see today's sunset; the buttons "Done at sunset", "Start at sunset" and "Start 1 hour after" fill in the time. "Shift with the sunset every day" keeps that offset relative to each day's sunset. Sunset times are calculated offline (NOAA approximation, a few minutes accurate).
+Profiles: two profiles (default "Werk" Mon–Fri and "Weekend" Sat–Sun), each with its own name, weekdays, strength, duration, end action and schedule. The schedule uses the first scheduled profile for the current weekday. Every change is stored immediately; the Save button shows a summary of what the profile will do. Settings from 1.0–1.3 are copied into both profiles.
+Display: two-column window that fits a 1280x800 (logical) screen, e.g. a 14" 1920x1200 laptop at 150%, without scrolling. The app is DPI-aware, so text stays sharp at 125%/150% scaling.

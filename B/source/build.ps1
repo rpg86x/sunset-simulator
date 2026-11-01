@@ -30,5 +30,5 @@ if (!$p.WaitForExit(30000)) { $p.Kill(); throw 'Test timeout' }
 if ($p.ExitCode -ne 0) { throw 'Self-test failed' }
 Get-Content "$out/self-test.txt"
 $hash = (Get-FileHash $exe -Algorithm SHA256).Hash
-@{app='Sunset Simulator';status='B';version='1.3-dev';sourceVersion='1.3-dev';windowsVersion='1.3-dev';buildId=$hash;approved=$false;runtime='Windows .NET Framework 4.x'} | ConvertTo-Json | Set-Content "$PSScriptRoot/../release.json"
+@{app='Sunset Simulator';status='B';version='1.5-dev';sourceVersion='1.5-dev';windowsVersion='1.5-dev';buildId=$hash;approved=$false;runtime='Windows .NET Framework 4.x'} | ConvertTo-Json | Set-Content "$PSScriptRoot/../release.json"
 Write-Output "Built $exe"

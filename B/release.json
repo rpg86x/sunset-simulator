@@ -1,10 +1,10 @@
 {
-    "version":  "1.3-dev",
-    "sourceVersion":  "1.3-dev",
-    "buildId":  "2DFD6831D930C4744F1D3228E2D7C58C9809AAA55CC37D6BB31954B9DCD07E91",
+    "version":  "1.5-dev",
+    "sourceVersion":  "1.5-dev",
+    "buildId":  "4D43A3FB1C874E2561C2641C1A1D2AEFB0B3C8DC862A156AF6148789722EBA2F",
     "approved":  false,
     "status":  "B",
     "app":  "Sunset Simulator",
-    "windowsVersion":  "1.3-dev",
+    "windowsVersion":  "1.5-dev",
     "runtime":  "Windows .NET Framework 4.x"
 }
